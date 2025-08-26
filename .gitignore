@@ -1,0 +1,32 @@
+# Node
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Docker
+*.local
+
+# Misc
+*.log
+coverage/
+
+
+# Ignore generated Prisma client
+backend/node_modules/.prisma/
+
+# Ignore frontend cache
+frontend/.cache/
