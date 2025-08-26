@@ -25,37 +25,8 @@ A full-stack platform for creating skill quizzes, tracking attempts, and surfaci
 
 ---
 
-## 🏛 Architecture
-
-```mermaid
-flowchart LR
-  subgraph Client [Frontend (React + Webpack)]
-    A[Login/Register] --> B[Dashboard]
-    B --> C[Admin: Questions & Reports]
-  end
-
-  subgraph Backend [Node.js + Express]
-    D[Auth & RBAC]
-    E[Skills/Questions/Attempts]
-    F[Reports]
-    G[Prisma Client]
-  end
-
-  subgraph Cache [Redis]
-    H[(Cache)]
-  end
-
-  subgraph DB [MySQL]
-    I[(skill_portal)]
-  end
-
-  Client <-- JWT --> Backend
-  Backend <--> Cache
-  Backend <--> DB
-  ```
-
 ## 🗂 Project Structure
-```mermaid
+```
 skill-portal/
 ├─ backend/
 │  ├─ src/                      # Express app, controllers, routes, middleware
